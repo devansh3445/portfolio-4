@@ -110,7 +110,7 @@ const Header = () => {
           Skills
         </a>
         <a
-          href="Projects"
+          href="#projects"
           onClick={closeMobileMenu}
           className="text-gray-600 hover:text-emerald-800 transition-colors duration-300 font-medium text-3xl py-4"
         >
@@ -118,7 +118,7 @@ const Header = () => {
         </a>
         
         <a
-          href="Contact"
+          href="#contact"
           onClick={closeMobileMenu}
           className="text-gray-600 hover:text-emerald-800 transition-colors duration-300 font-medium text-3xl py-4"
         >
