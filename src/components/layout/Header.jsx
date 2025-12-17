@@ -110,21 +110,15 @@ const Header = () => {
           Skills
         </a>
         <a
-          href="projects"
+          href="Projects"
           onClick={closeMobileMenu}
           className="text-gray-600 hover:text-emerald-800 transition-colors duration-300 font-medium text-3xl py-4"
         >
           Projects
         </a>
+        
         <a
-          href="#certificates"
-          onClick={closeMobileMenu}
-          className="text-gray-300 hover:text-emerald-400 transition-colors duration-300 font-medium text-3xl py-4"
-        >
-          Certificates
-        </a>
-        <a
-          href="contact"
+          href="Contact"
           onClick={closeMobileMenu}
           className="text-gray-600 hover:text-emerald-800 transition-colors duration-300 font-medium text-3xl py-4"
         >
