@@ -25,28 +25,36 @@ const Skills = () => {
       { threshold: 0.1 }
     );
 
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-
-    return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
-      }
-    };
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
   }, []);
+
   return (
-    <section id="skills" className="py-20 md:py-32 bg-gray-950" ref={ref}>
-      <div className="container mx-auto max-w-6xl px-6 text-center">
+    <section
+      id="skills"
+      ref={ref}
+      className="py-16 sm:py-20 md:py-32 bg-gray-950"
+    >
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 text-center">
         <h2
-          className={`text-4xl font-bold mb-12 text-white ${
+          className={`text-3xl sm:text-4xl font-bold mb-12 text-white ${
             isVisible ? "fade-in-section is-visible" : "fade-in-section"
           }`}
-          style={{ "--animation-delay": "0s" }}
         >
           My Technical <span className="text-emerald-400">Skills</span>
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 mt-10">
+
+        <div className="
+          grid
+          grid-cols-2
+          sm:grid-cols-3
+          md:grid-cols-4
+          lg:grid-cols-5
+          gap-4 sm:gap-6 lg:gap-8
+          mt-10
+          
+          md:active:scale-100
+        ">
           {skillsData.map((skill, index) => (
             <SkillCard
               key={skill.name}

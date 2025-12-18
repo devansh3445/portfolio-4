@@ -68,12 +68,30 @@ const About = () => {
             </p>
 
             <a
-              href="/Devansh.pdf"
-              download
-              className="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-600 hover:to-teal-600 text-white font-medium inline-flex py-3 px-6 rounded-full transition-all duration-300 shadow-lg shadow-emerald-500/20  items-center group"
-            >
-              Download My Resume
-            </a>
+  href="/Devansh.pdf"
+  download
+  className="
+    w-full sm:w-auto
+    flex items-center justify-center
+    gap-2
+    bg-gradient-to-r from-emerald-500 to-teal-500
+    hover:from-emerald-600 hover:to-teal-600
+
+    active:from-emerald-700 active:to-teal-700
+
+    text-white font-medium
+    text-sm sm:text-base
+    py-3 sm:py-3.5
+    px-6 sm:px-8
+    rounded-full
+    transition-all duration-300
+    shadow-lg shadow-emerald-500/20
+    active:scale-95
+  "
+>
+  Download My Resume
+</a>
+
           </div>
         </div>
       </div>
