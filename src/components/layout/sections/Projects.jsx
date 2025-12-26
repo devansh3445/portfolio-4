@@ -3,7 +3,7 @@ import ProjectCard from "../../ui/ProjectCard";
 
 const projectsData = [
   {
-    title: "FinEdge (UptoSkill)",
+    title: "FinTech (UptoSkill)",
     description:
       "UptoSkill Lead Generation CRM is a scalable web application that enables businesses to capture, organize, and track leads in real time. It features secure authentication, dynamic lead management, and a responsive dashboard optimized for sales workflows.",
     img: "screen 1.png",

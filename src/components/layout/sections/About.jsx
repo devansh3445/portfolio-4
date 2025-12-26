@@ -30,9 +30,8 @@ const About = () => {
     <section id="about" className="py-20 md:py-32 bg-gray-900" ref={ref}>
       <div className="container mx-auto max-w-6xl px-6">
         <div
-          className={`grid grid-cols-1 md:grid-cols-2 gap-16 items-center ${
-            isVisible ? "fade-in-section is-visible" : "fade-in-section"
-          }`}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-16 items-center ${isVisible ? "fade-in-section is-visible" : "fade-in-section"
+            }`}
         >
           <div
             className="order-2 md:order-1"
@@ -43,8 +42,8 @@ const About = () => {
               alt="Code on screen"
               className="rounded-xl shadow-2xl w-full h-auto object-cover border bprder-emerald-500/30"
               onError={(e) =>
-                (e.target.src =
-                  "https://placehold.co/600x400/1a2a2f/e5e5e5?text=About+Image")
+              (e.target.src =
+                "https://placehold.co/600x400/1a2a2f/e5e5e5?text=About+Image")
               }
             />
           </div>
@@ -68,9 +67,9 @@ const About = () => {
             </p>
 
             <a
-  href="/Devansh.pdf"
-  download
-  className="
+              href="/Devansh.pdf"
+              download
+              className="
     w-full sm:w-auto
     flex items-center justify-center
     gap-2
@@ -88,9 +87,9 @@ const About = () => {
     shadow-lg shadow-emerald-500/20
     active:scale-95
   "
->
-  Download My Resume
-</a>
+            >
+              Download My Resume
+            </a>
 
           </div>
         </div>
